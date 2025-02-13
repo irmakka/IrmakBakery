@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Irmak Magnolia</title>
+    <link rel="stylesheet" href="foodOrderStyle.css">
+    <style>
+    h1{
+       margin: 100px;
+        text-align: center;
+        font-family:cursive;
+        font-size: medium;
+    }
+    .form{
+          display: flex;
+          justify-content: center;
+          padding-top:50px;
+     }
+     .formInside{
+        position: absolute;
+        background-color: #cb6ce6;
+        padding: 50px;
+
+     }
+      textarea{
+         resize:none;
+      }
+      .Enter{
+          margin-top: 10px;
+         display: flex;
+         justify-content: center;
+      }
+      .Sign{
+        padding-left: 10px;
+        text-decoration: underline;
+    
+    }
+      .Sign:hover{
+        color:white;
+        cursor: pointer;
+      }
+    
+
+        
+    </style>
+</head>
+<body>
+   <section>
+    <nav class="navbar">
+        <a class="Slogan" href="#irmakbakery">Irmak Bakery</a>
+        <ul class="MenuItems">
+            <li><a class="EachItem" href="Menu.html">Menü</a></li>
+            <li><a class="EachItem" href="Sipariş.html">Sipariş</a></li>
+            <li><a class="EachItem" href="payment.html">Payment</a></li>
+            <li><a class="EachItem" href="İletişim.html">İletişim</a></li>
+        </ul>
+        <div class="Hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+   </section>
+
+   <section>
+
+      
+    <h1>Lütfen kaydolun</h2>
+
+    <form class="form">
+     <div class="formInside">
+    <p> İsminiz</p>
+   <textarea> </textarea>
+   <p> Emailiniz</p>
+   <textarea> </textarea>
+    <p> Şifreniz</p>
+   <textarea></textarea>
+   <div class="Enter">
+     <button class="btn">Enter</button>
+     <a  class="Sign " href="Menu.html">Giriş Yap</a>
+   </div>
+     </div>
+    </form>
+
+   </section>
+     
+   <script src="script.js"></script>
+</body>
+</html>
+
+     

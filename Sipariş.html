@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Irmak Magnolia</title>
+    <link rel="stylesheet" href="foodOrderStyle.css">
+    <style>
+    #Seçenekler{
+      color:aliceblue;
+      font-size:large;
+       display: inline-block;
+       padding: 50px;
+    }
+    #Seçenekler:hover{
+      color: black;
+      cursor: pointer;
+    }
+    img{
+      max-width: 130px;
+      height: 150px;
+    }
+    .içecekler{  
+      display: flex;
+      flex-wrap: wrap;
+      gap:10px;
+      justify-content:space-between;
+    
+    }
+    .İçecek{
+      padding-top: 10px;
+      flex: 0 0 calc(33.33% - 10px);
+      box-sizing: border-box;
+      border-color: yellow;
+      border-style: solid;
+      text-align: center;
+    }
+
+    .tatlılar{
+      display: flex;
+      flex-wrap: wrap;
+      gap:10px;
+      justify-content:space-between;
+    }
+  .tatlı{
+    padding-top:10px ;
+    flex: 0 0 calc(33.33% - 10px);
+      box-sizing: border-box;
+      border-color: yellow;
+      border-style: solid;
+      text-align: center;
+  }
+
+    </style>
+    <script src="Sipariş.js"></script>
+</head>
+<body>
+  <header>
+   <section>
+    <nav class="navbar">
+        <a class="Slogan" href="#irmakbakery">Irmak Bakery</a>
+        <ul class="MenuItems">
+            <li><a class="EachItem" href="Menu.html">Menü</a></li>
+            <li><a class="EachItem" href="Sipariş.html">Sipariş</a></li>
+            <li><a class="EachItem" href="payment.html">Payment</a></li>
+            <li><a class="EachItem" href="İletişim.html">İletişim</a></li>
+        </ul>
+        <div class="Hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+   </section>
+  </header>
+
+   <a id="Seçenekler" href="#İçecekler">İçecekler </a> 
+   <a id="Seçenekler" href="#Tatlılar">Tatlılar</a>
+
+   <section id="İçecekler" class="içecekler">
+    <div class="İçecek">
+     
+      <img src="Resimler/Ice Tea.jpg" alt="Ice Tea">
+      <p>Ice Tea</p>
+      <p> 80TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="IceTeaKaydet">Kaydet</button>
+      
+
+    </div>
+    <div class="İçecek">
+      <img src="Resimler/Oreo-Nutella-Milkshake.jpg" alt="Oreo ve Nutellalı Milkshake">
+      <p>Oreolu Milkshake</p>
+      <p>150TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="OreoluKaydet">Kaydet</button>
+
+
+
+    </div>
+    <div class="İçecek">
+
+      <img src="Resimler/MilkshakeÇilekli.jpg" alt="Çilekli Milkshake">
+      <p>Çilekli Milkshake</p>
+       <p>150TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="ÇilekliMİlkshakeKaydet">Kaydet</button>
+
+    </div>
+     <div class="İçecek">
+      <img src="Resimler/Kola.jpg" alt="Kola">
+      <p>Kola</p>
+      <p>80TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="KolaKaydet">Kaydet</button>
+
+     </div>
+     <div class="İçecek">
+      <img src="Resimler/Berry Hibiscus.jpg" alt="Berry Hibiscus">
+      <p>Berry Hibiscus</p>
+      <p>150TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="BerryKaydet">Kaydet</button>
+
+
+     </div>
+
+
+     <div class="İçecek">
+      <img src="Resimler/iced green tea.jpg" alt="Iced Green Tea">
+      <p>Buzlu Yeşil Çay</p>
+      <P>150TL</P>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="GreenKaydet">Kaydet</button>
+
+
+     </div>
+    </section>
+      
+   <section id="Tatlılar" class="tatlılar">
+    <div class="tatlı">
+      <img src="Resimler/Lotuslu Cheescake.jpg" alt="Lotuslu Cheescake">
+      <p>Lotuslu Cheescake</p>
+      <p>200TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="LotusluKaydet">Kaydet</button>
+    
+    </div>
+    <div class="tatlı">
+      <img src="Resimler/OIP.jpg" alt="Meyveli Pasta">
+      <p>Orman Meyveli Pasta</p>
+      <p>200TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="MeyveliPastaKaydet">Kaydet</button>
+    </div>
+    <div class="tatlı">
+      <img src="Resimler/Çilekli Magnolia.jpg" alt="Çilekli Magnolia">
+      <p>Çilekli Magnolia</p>
+      <p>200TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="ÇilekliMagnoliaKaydet">Kaydet</button>
+    </div>
+     <div class="tatlı">
+      <img src="Resimler/FrambuazlıCheescake.jpg" alt="FrambuazlıCheescake">
+      <p>Frambuazlı Cheescake</p>
+      <p>200TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="FrambuazlıCheescakeKaydet">Kaydet</button>
+
+
+     </div>
+     <div class="tatlı">
+      <img src="Resimler/ÇilekliDondurma.jpg" alt="Meyveli Pasta">
+      <p>Orman Meyveli Pasta</p>
+      <p>200TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="ÇilekliDondurmaKaydet">Kaydet</button>
+
+
+     </div>
+     <div class="tatlı">
+      <img src="Resimler/baklava.jpg" alt="Baklava">
+      <p>Baklava</p>
+      <p>200TL</p>
+      <select>
+        <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+      </select>
+      <button class="BaklavaKaydet">Kaydet</button>      
+
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:hotpink;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.EachItem:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.Slogan {
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: #cb6ce6;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.MenuItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.Hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .Hamburger {
+        display: block;
+    }
+
+    .Hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .Hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .Hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .MenuItems {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #cb6ce6;
+        padding: 20px 0;
+    }
+
+    .EachItem {
+        margin: 16px 0;
+        color: white;
+    }
+
+    .MenuItems.active {
+        left: 0;
+    }
+   .EachItem:hover{
+     color: black;
+     cursor: pointer;
+   }
+}

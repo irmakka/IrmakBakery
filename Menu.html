@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Irmak Magnolia</title>
+    <link rel="stylesheet" href="foodOrderStyle.css">
+    <style>
+    h1,h2{
+       margin: 60px;
+        text-align: center;
+        font-family:cursive;
+        font-size: medium;
+    }
+     .form{
+       width:300px;
+        display: block;
+        margin: auto;
+     
+     }
+     .formInside{
+       background-color: #cb6ce6;
+       padding: 50px;
+     }
+    
+      .Enter{
+          margin-top: 10px;
+         display: flex;
+         justify-content: center;
+      }
+      .Sign{
+        padding-left: 10px;
+        text-decoration: underline;
+    
+    }
+      .Sign:hover{
+        color:black;
+        cursor: pointer;
+      }
+    
+
+        
+    </style>
+
+</head>
+<body>
+   <section>
+    <nav class="navbar">
+        <a class="Slogan" href="#irmakbakery">Irmak Bakery</a>
+        <ul class="MenuItems">
+            <li><a class="EachItem" href="Menu.html">Menü</a></li>
+            <li><a class="EachItem" href="Sipariş.html">Sipariş</a></li>
+            <li><a class="EachItem" href="payment.html">Payment</a></li>
+            <li><a class="EachItem" href="İletişim.html">İletişim</a></li>
+        </ul>
+        <div class="Hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+   </section>
+
+   <section>
+
+    <h1> Hoş geldiniz.</h1>
+    <h2>Lütfen giriş yapınız.</h2>
+    <div class="form">
+    <form id="loginForm" class="formInside">
+      <label class="message" for="username">Kullanıcı Adı:</label>
+      <input type="text" id="username" name="username" required>
+      <label class="şifre" for="şifre">Şifre :</label>
+      <input type="text" id="şifre" name="şifre" required>
+    <div class="Enter">
+      <button  type="submit">Giriş Yap</button>
+     <a  class="Sign " href="SignUp.html">Kaydol</a>
+     </div>
+    </form>
+    </div>
+   </section>
+     
+    <script src="script.js"></script>
+</body>
+</html>

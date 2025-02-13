@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Irmak Magnolia</title>
+    <link rel="stylesheet" href="foodOrderStyle.css">
+ <style>
+     .pay{
+          display:block;
+          text-align: center;
+    }
+    p{
+        color: aliceblue;
+        margin: 20px;
+    }
+    button{
+        background-color: black;
+        color: white;
+    }
+
+ </style>    
+ <script src="Sipariş.js"></script>
+
+</head>
+<body>
+    <section>
+     <nav class="navbar">
+         <a class="Slogan" href="#irmakbakery">Irmak Bakery</a>
+         <ul class="MenuItems">
+             <li><a class="EachItem" href="Menu.html">Menü</a></li>
+             <li><a class="EachItem" href="Sipariş.html">Sipariş</a></li>
+             <li><a class="EachItem" href="payment.html">Payment</a></li>
+             <li><a class="EachItem" href="İletişim.html">İletişim</a></li>
+         </ul>
+         <div class="Hamburger" onclick="toggleMenu()">
+             <span class="bar"></span>
+             <span class="bar"></span> 
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+     </nav>
+    </section>
+
+      <div class="pay">
+     <p id="Alınanlar">The things you buy:</p>
+      <p id="Ödenecek">Need to pay:</p>
+      <button  id="öde">Öde</button>
+      <button id="btnDelete">Delete All</button>
+     <div>
+        <script src="script.js"></script>
+</body>
+<footer>
+
+  
+
+</footer>
+</html>
